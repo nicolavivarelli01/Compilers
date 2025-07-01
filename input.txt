@@ -1,8 +1,8 @@
 <++ header section ++>
 !1001;              // tk1
-$2025/07/02;        <* tk2 *>
+$2025/07/02;        <++ tk2 ++>
 $2026/01/01:06:00;  // tk2
-?-121;              <* tk1 *>
+?-121;              <++ tk1 ++>
 ++++++
 <++ objects section ++>
 obj "weight" 3, "price" 4, "height" 5 name "pen" end
