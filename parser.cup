@@ -121,7 +121,7 @@ bool_expr ::= bool_expr:a AND bool_expr:b {: RESULT= (a && b); :}
             | RO bool_expr:a RC {: RESULT= (Boolean)a; :}
             | obj_ref:v1 EQU UINT:v2
             {:
-                if(v1 == v2){
+                if(v1.equals(v2)){
                     RESULT=true;
                 }
                 else{
@@ -130,7 +130,7 @@ bool_expr ::= bool_expr:a AND bool_expr:b {: RESULT= (a && b); :}
             :}
             | obj_ref:v1 NEQU UINT:v2
             {:
-                if(v1 != v2){
+                if(!v1.equals(v2)){
                     RESULT=true;
                 }
                 else{
